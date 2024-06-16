@@ -10,22 +10,8 @@ if os.name == 'nt':
     os.system('chcp 65001')
 else:
     sys.stdout.reconfigure(encoding='utf-8')
-#import flask
-#import uwsgi
-#uwsgi.opt["enable-threads"] = True
-
-
 import torchvision.transforms as transforms
 from torchvision import models
-
-#print("sys.path:", sys.path)
-#print("PYTHONPATH:", os.environ.get('PYTHONPATH'))
-
-#from telegram import Update, Bot,InputMediaPhoto,InlineKeyboardButton#, BotCommand#InputFile
-#from telegram.ext import Updater,Dispatcher, CommandHandler, MessageHandler,CallbackContext,CallbackQueryHandler
-# from flask import Flask, request
-
-
 
 from PIL import Image
 import copy
@@ -213,9 +199,9 @@ import torchvision.transforms as transforms
 
 # Global variables and configurations
 global TOKEN, WEBHOOK_URL, bot, WEBHOOK_SET, style_image_path,bot_data
-TOKEN = "6633507528:AAFYaCUYDk7hprPsRTEhxkgK6C8xrD0vkmA"
+TOKEN = "TOKEN"
 WEBHOOK_PATH = "/webhook"
-WEBHOOK_URL = "https://firstly-obliging-swan.ngrok-free.app" + WEBHOOK_PATH
+WEBHOOK_URL = "https://YOUR DOMAIN NAME" + WEBHOOK_PATH
 style_image_path = "styles/sty.jpg"
 bot = None
 WEBHOOK_SET = False
