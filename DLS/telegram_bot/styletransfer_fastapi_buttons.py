@@ -201,7 +201,7 @@ import torchvision.transforms as transforms
 global TOKEN, WEBHOOK_URL, bot, WEBHOOK_SET, style_image_path,bot_data
 TOKEN = "TOKEN"
 WEBHOOK_PATH = "/webhook"
-WEBHOOK_URL = "https://YOUR DOMAIN NAME" + WEBHOOK_PATH
+WEBHOOK_URL = "https://YOUR DOMAIN NAME" + WEBHOOK_PATHchat
 style_image_path = "styles/sty.jpg"
 bot = None
 WEBHOOK_SET = False
@@ -308,7 +308,7 @@ async def set_webhook():
     logger.info(f"Webhook set to {WEBHOOK_URL}")
 
 async def send_welcome_message():
-    chat_id = '5182590043'
+    chat_id = ' c'
     await bot.send_message(chat_id=chat_id, text="Бот запущен и готов к работе!")
 
 async def handle_callback_query(update:Update):
